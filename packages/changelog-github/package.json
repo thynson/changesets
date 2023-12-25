@@ -19,8 +19,8 @@
   "license": "MIT",
   "repository": "https://github.com/changesets/changesets/tree/main/packages/changelog-github",
   "dependencies": {
-    "@changesets/get-github-info": "^0.6.0",
-    "@changesets/types": "^6.0.0",
+    "@changesets/get-github-info": "workspace:*",
+    "@changesets/types":  "workspace:*",
     "dotenv": "^8.1.0"
   },
   "devDependencies": {

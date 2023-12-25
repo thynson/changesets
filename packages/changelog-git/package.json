@@ -19,6 +19,6 @@
   "license": "MIT",
   "repository": "https://github.com/changesets/changesets/tree/main/packages/changelog-git",
   "dependencies": {
-    "@changesets/types": "^6.0.0"
+    "@changesets/types": "workspace:*"
   }
 }

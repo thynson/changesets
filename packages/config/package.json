@@ -23,10 +23,10 @@
     "schema.json"
   ],
   "dependencies": {
-    "@changesets/errors": "^0.2.0",
-    "@changesets/get-dependents-graph": "^2.0.0",
-    "@changesets/logger": "^0.1.0",
-    "@changesets/types": "^6.0.0",
+    "@changesets/errors": "workspace:*",
+    "@changesets/get-dependents-graph": "workspace:*",
+    "@changesets/logger": "workspace:*",
+    "@changesets/types": "workspace:*",
     "@manypkg/get-packages": "^1.1.3",
     "fs-extra": "^7.0.1",
     "micromatch": "^4.0.2"
