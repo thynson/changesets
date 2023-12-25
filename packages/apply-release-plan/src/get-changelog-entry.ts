@@ -1,7 +1,7 @@
 import { ChangelogFunctions, NewChangesetWithCommit } from "@changesets/types";
 
 import { ModCompWithPackage } from "@changesets/types";
-import startCase from "lodash.startcase";
+import { startCase } from "lodash";
 import { shouldUpdateDependencyBasedOnConfig } from "./utils";
 
 type ChangelogLines = {

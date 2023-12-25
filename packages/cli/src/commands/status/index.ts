@@ -1,4 +1,5 @@
 import chalk from "chalk";
+import TtyTable from "tty-table";
 import table from "tty-table";
 import fs from "fs-extra";
 import path from "path";
@@ -100,14 +101,20 @@ function verbosePrint(
       ]
     );
 
+    const options: Partial<TtyTable.Header> = {
+      paddingLeft: 1,
+      paddingRight: 0,
+      headerAlign: "center",
+      align: "left",
+    };
+
     const t1 = table(
       [
-        { value: "Package Name", width: 20 },
-        { value: "New Version", width: 20 },
-        { value: "Related Changeset Summaries", width: 70 },
+        { value: "Package Name", width: 20, ...options },
+        { value: "New Version", width: 20, ...options },
+        { value: "Related Changeset Summaries", width: 70, ...options },
       ],
-      columns,
-      { paddingLeft: 1, paddingRight: 0, headerAlign: "center", align: "left" }
+      columns
     );
     log(t1.render() + "\n");
   } else {

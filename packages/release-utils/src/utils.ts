@@ -37,7 +37,8 @@ export async function getChangedPackages(
 }
 
 export function getChangelogEntry(changelog: string, version: string) {
-  let ast = unified().use(remarkParse).parse(changelog);
+  // TODO: Fix any type
+  let ast = unified().use(remarkParse).parse(changelog) as any;
 
   let highestLevel: number = BumpLevels.dep;
 
